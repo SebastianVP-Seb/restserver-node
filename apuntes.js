@@ -130,7 +130,20 @@ Archivo .gitignore (Hacer respaldo en GitHub)
 En la consola: 
     git init
     git add .
-    git commit -m "Primer commit"    
+    git commit -m "Primer commit"  
+
+Ir a Github y crear un nuevo repositorio
+Una vez creado, copiar los comandos del apartado: …or push an existing repository from the command line
+Copiar y pegar los 3 al mismo tiempo en la consola (enter)
+Recargar el navegador y ya se tiene la app en el repositorio
+Crear archivo README.md en VisualStudioCode
+
+volver a hacer:
+ git add .
+ git commit -m "Readme añadido"
+    
+Por si se llega a borrar un archivo del proyecto:
+    git checkout -- .
 
 
 
