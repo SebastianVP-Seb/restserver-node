@@ -141,11 +141,33 @@ Crear archivo README.md en VisualStudioCode
 volver a hacer:
  git add .
  git commit -m "Readme añadido"
+
+Crear versión de cómo se encuentra el proyecto ahora
+    git tag -a v1.0.0 -m "Fin seccion 8"
+    git push --tags
+Esto crea un tag en Guthub del lado derecho, debajo de Releases
+... De aquí se puede descargar el código
     
 Por si se llega a borrar un archivo del proyecto:
     git checkout -- .
+    git push (para volver a subirlo a internet)
 
 
+
+Desplegar en Heroku
+    En la tareminal pegar: heroku git:remote -a rest-server-node-seb
+    git push heroku master  (da error)
+    git branch  (aparece *main)
+    git push heroku main  (así se debe poner)
+
+    Ya se puede abrir la app en heroku, pero marca error porque en el package.json no se
+    especificó el comando para arrancar la aplicación
+    Ir a scripts y poner: "start":"node app"
+
+    Volver a hacer:
+        git add .
+        git commit -m "start añadido"
+        git push
 
 
 */
